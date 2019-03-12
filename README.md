@@ -3,6 +3,10 @@
 ## Entrar al contenedor
 docker-compose run angular bash
 
+## instalar dependencias
+dentro de contenedor:
+npm i
+
 ## Crear nuevo proyecto
 Dentro del contenedor:
 ng new [MiSuperProyecto] --directory .
