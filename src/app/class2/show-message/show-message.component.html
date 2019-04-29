@@ -1,0 +1,21 @@
+
+
+<p>Funcion en el template</p>
+<div>
+  <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+show = {{show}}
+<br>
+<div *ngIf="show; else elseBlock">Text to show</div>
+</div>
+
+<br>
+
+<p>Funcion en la clase</p>
+<div>
+  <button (click)="hideTheMessage()" >Boton 2</button>
+
+  show2 = {{show2}}
+
+  <h2 *ngIf="show2" >Me ves porque 'show 2' es {{show2}}</h2>
+
+</div>

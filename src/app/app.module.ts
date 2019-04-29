@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 
 //directives
 import { HighlightDirective } from './highlight.directive';
+import { ShowMessageComponent } from './class2/show-message/show-message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    ShowMessageComponent
   ],
   imports: [
     BrowserModule
