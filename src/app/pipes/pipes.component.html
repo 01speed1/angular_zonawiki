@@ -1,0 +1,20 @@
+<div style="padding: 1rem" >
+<h2>Pipes</h2>
+
+<h3>Pipe de fecha</h3>
+<p> {{birthday}} </p>
+
+<label for="">date </label>
+<p> {{ birthday | date }} </p>
+
+<label for="">date format custom</label>
+<p> {{ birthday | date:"yyyy $$ MM /// dd" }} </p>
+
+<label for="">date format</label>
+<p> {{ birthday | date:format}} </p>
+
+<h3>cadena de pipes</h3>
+<label for="">date format + uppercase</label>
+<p> {{ birthday | date:format |  uppercase}} </p>
+
+</div>

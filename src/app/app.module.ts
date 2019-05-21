@@ -25,13 +25,15 @@ import { MaterialDsgnComponent } from './class_3/material-dsgn/material-dsgn.com
 import { EventsComponent } from './class_3/events/events.component';
 import { UsuriosComponent } from './usurios/usurios.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MaterialDsgnComponent,
     EventsComponent,
-    UsuriosComponent
+    UsuriosComponent,
+    PipesComponent
   ],
   imports: [
     //importar para los services
