@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 //Animaciones
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+//Service
+import { UsuariosService } from './services/usuarios.service';
 
 
 //Material Comps
@@ -21,14 +23,19 @@ import {
 import { AppComponent } from './app.component';
 import { MaterialDsgnComponent } from './class_3/material-dsgn/material-dsgn.component';
 import { EventsComponent } from './class_3/events/events.component';
+import { UsuriosComponent } from './usurios/usurios.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MaterialDsgnComponent,
-    EventsComponent
+    EventsComponent,
+    UsuriosComponent
   ],
   imports: [
+    //importar para los services
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     //components
@@ -37,7 +44,7 @@ import { EventsComponent } from './class_3/events/events.component';
 
     FormsModule
   ],
-  providers: [],
+  providers: [UsuariosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
