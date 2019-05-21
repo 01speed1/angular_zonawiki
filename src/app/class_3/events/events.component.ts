@@ -20,7 +20,7 @@ export class EventsComponent implements OnInit {
     pulsaron: "",
     enter: "",
     usuario: "",
-    password: this.password
+    password: ""
   }
 
   grita(){
