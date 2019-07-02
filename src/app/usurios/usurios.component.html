@@ -1,3 +1,37 @@
 <h3>Servicios</h3>
 
-<pre> {{users[0] | json}} </pre>
+<div *ngFor="let user of users">
+  <mat-form-field>
+    <input matInput placeholder="Nombre" name="name" [(ngModel)]="user.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="username" [(ngModel)]="user.username" name="username">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="street" [(ngModel)]="user.address.street" name="street">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="suite" [(ngModel)]="user.address.suite" name="suite">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="city" [(ngModel)]="user.address.city" name="city">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="phone" [(ngModel)]="user.phone" name="phone">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="phone" [(ngModel)]="user.website" name="website">
+  </mat-form-field>
+
+  <pre> {{users[0] | json}} </pre>
+  <br>
+  <br>
+  <br>
+</div>
+
