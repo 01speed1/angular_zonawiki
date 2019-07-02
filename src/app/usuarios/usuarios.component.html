@@ -29,6 +29,10 @@
     <input matInput placeholder="phone" [(ngModel)]="user.website" name="website">
   </mat-form-field>
 
+  <button (click)="editUser111(user)" > actualizar </button>
+
+  <button (click)="deleteUser(user.id)" > borrar </button>
+
   <pre> {{users[0] | json}} </pre>
   <br>
   <br>

@@ -17,6 +17,26 @@ export class UsuariosComponent implements OnInit {
     } )
   }
 
+  editUser111(userData){
+    this._usuarios.editUser(userData).subscribe(user => {
+      console.log("usuario actualizado");
+
+      console.log(user);
+    })
+  }
+
+  deleteUser(id){
+    this.users = this.users.filter(user => {
+      if(user.id != id) return user
+    })
+
+    this._usuarios.deletetUser(id).subscribe(user => {
+      console.log("usuario borrado");
+
+      console.log(user);
+    })
+  }
+
   ngOnInit() {
   }
 
