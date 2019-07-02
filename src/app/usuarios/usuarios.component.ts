@@ -4,11 +4,10 @@ import { UsuariosService } from '../services/usuarios.service';
 
 
 @Component({
-  selector: 'app-usurios',
-  templateUrl: './usurios.component.html',
-  styleUrls: ['./usurios.component.css']
+  selector: 'app-usuarios',
+  templateUrl: './usuarios.component.html'
 })
-export class UsuriosComponent implements OnInit {
+export class UsuariosComponent implements OnInit {
 
   users:any = []
 
